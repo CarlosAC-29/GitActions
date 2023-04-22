@@ -1,0 +1,8 @@
+
+FROM node:14
+WORKDIR /tallergithubactions
+RUN npm install
+COPY . .
+RUN npm test
+
+CMD ["npm", "test"]
